@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .calculator{
+       margin-top: 200px;
+       margin-left: 400px;
+       height: auto;
+       width: 210px;
+       border: 1px solid black;
+       text-align: center;
+       overflow: hidden;
+       background-color: rgb(3, 3, 3);
+       }
+       input{
+        width: 80%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-top: 40px;
+        background-color: blanchedalmond;
+        
+       }
+       .numbers{
+        background-color: black;
+        margin-top: 0px;
+       }
+       button{
+        padding: 12px;
+        margin: 4px;
+        margin-top: 3px;
+
+       }
+
+
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <!-- display -->
+        
+           <input type="text">
+        
+        <!-- numbers and operations -->
+        <div class="numbers">
+          <div class="row1">
+            <button onclick="number(this.value)" value="1"> 1</button>
+            <button onclick="number(this.value)" value="2">2</button>
+            <button onclick="number(this.value)" value="3">3</button>
+            <button onclick="number(this.value)" value="+">+</button>
+          </div>
+          <div class="row2">
+            <button onclick="number(this.value)" value="4"> 4</button>
+            <button onclick="number(this.value)" value="5">5</button>
+            <button onclick="number(this.value)" value="6">6</button>
+            <button onclick="number(this.value)" value="-">-</button>
+          </div>
+          <div class="row3">
+            <button onclick="number(this.value)" value="7">7</button>
+            <button onclick="number(this.value)" value="8">8</button>
+            <button onclick="number(this.value)" value="9">9</button>
+            <button onclick="number(this.value)" value="*">*</button>
+          </div>
+          <div class="row4">
+            <button onclick="number(this.value)" value="c">c</button>
+            <button onclick="number(this.value)" value="0">0</button>
+            <button onclick="number(this.value)" value="=">=</button>
+            <button onclick="number(this.value)" value="/">/</button>
+          </div>
+        </div>
+
+    </div>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
